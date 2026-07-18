@@ -1,0 +1,112 @@
+body {  
+    font-family: Arial,Arial, Helvetica,  sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dbe2e2;
+}
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+nav ul li a :hover {
+    color: #ff0;
+}
+/* Main content styles */
+::selection {
+    background: #ff0;
+    color: #000;
+} 
+/* Heading styles */
+h2 {
+    color: #333;
+}
+/* style paragraph */
+p {
+    color: #0f0f0f;
+    line-height: 1.6;
+}
+/* image styles */
+#about img {     
+    max-width: 100%;
+    height: auto;
+}
+/* style gallery */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+#gallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+/* contact form styles */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #555;
+}
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} 
