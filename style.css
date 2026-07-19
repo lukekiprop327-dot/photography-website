@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #dbe2e2;
+    box-sizing: border-box;
 }
 /* Header styles */
 header {
@@ -29,11 +30,15 @@ nav ul li {
 nav ul li a {
     color: #fff; 
     text-decoration: none;
+    display: flex;
 }
 nav ul li a:hover {
     text-decoration: underline;
 }
 nav ul li a :hover {
+    color: #ff0;
+}
+nav a :hover {
     color: #ff0;
 }
 /* Main content styles */
@@ -70,6 +75,11 @@ p {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
 /* contact form styles */
 form {
     max-width: 600px;
@@ -99,6 +109,21 @@ form button {
 }
 form button:hover {
     background-color: #555;
+}
+/* hero section */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+.hero-content {
+    max-width: 600px;
 }
 /* Footer styles */
 footer {
